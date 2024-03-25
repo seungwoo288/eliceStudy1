@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 우선 순위</title>
+  <style>
+    p { color: red; }
+    p { color: blue; }
+    h3 { color: red; }
+    header h3 { color: black; }
+    #color {color: yellow}
+    h3 { background-color: green; }
+  </style>
+</head>
+<body>
+  <p>순서 캐스케이딩</p>
+  <header>
+    <h3>디테일 캐스케이딩</h3>
+  </header>
+  <h4 style = "color:green;" id="color" class="color">선택자 캐스케이딩</h4>
+</body>
+</html>

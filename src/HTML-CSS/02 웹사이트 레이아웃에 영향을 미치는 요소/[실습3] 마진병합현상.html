@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>마진병합현상</title>
+
+  <style>
+<!--    #box1 {-->
+<!--      width: 100%;-->
+<!--      height: 200px;-->
+<!--      background-color: yellow;-->
+<!--      margin-bottom: 150px;-->
+<!--    }-->
+
+<!--    #box2 {-->
+<!--      width: 100%;-->
+<!--      height: 200px;-->
+<!--      background-color: pink;-->
+<!--      margin-top: 100px;-->
+<!--    }-->
+
+
+    main {
+      width: 100%;
+      height: 400px;
+      background-color: yellow;
+    }
+
+    article {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin-top: 100px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+
+<!-- 형제 지간에 발생하는 마진 병합 현상 -->
+<div id="box1"></div>
+<div id="box2"></div>
+
+
+<!-- 부모 자식 지간에 발생하는 마진 병합 현상 -->
+<main role="main">
+  <article></article>
+</main>
+
+
+</body>
+</html>
