@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>복리 금액 계산기</title>
+</head>
+
+<body>
+<div id="root">
+  <main>
+    <h2>복리 금액 계산기</h2>
+
+    <div class="form-container">
+      <form id="input-form">
+        <div class="form-field">
+          <label for="principal">초기예금액(원)</label>
+          <input id="principal" type="number" name="principal" />
+        </div>
+
+        <div class="form-field">
+          <label for="rate">복리이자율(%)</label>
+          <input id="rate" type="number" name="rate" />
+        </div>
+
+        <div class="form-field">
+          <label for="year">예치기간(년)</label>
+          <input id="year" type="number" name="year" />
+        </div>
+
+        <div class="form-field">
+          <label for="frequency">복리발생빈도</label>
+          <select id="frequency" name="frequency">
+            <option value="1">년</option>
+            <option value="2">반기</option>
+            <option value="4">분기</option>
+            <option value="12">월</option>
+          </select>
+        </div>
+
+        <button type="button" id="form-button">계산하기</button>
+      </form>
+    </div>
+
+    <div>
+      <p id="result-text">예금액 400,000원 기준<br />4년 후<br />월별 2.5%의 복리 계산 시<br />최종 잔고는 400,000원 입니다.
+      </p>
+    </div>
+  </main>
+</div>
+
+<script src="./index.js"></script>
+</body>
+
+</html>
